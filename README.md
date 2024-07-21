@@ -36,7 +36,7 @@ The Social Media Hashtag Trend Analyzer is a web application that analyzes trend
 1. **Clone the Repository**:
     ```bash
     git clone https://github.com/MananGupta2603/Social-Media-Hashtag-Trend-Analyzer-Application.git
-    cd social-media-hashtag-trend-analyzer
+    cd Social-Media-Hashtag-Trend-Analyzer-Application
     ```
 
 2. **Set Up AWS Lambda Function**:
