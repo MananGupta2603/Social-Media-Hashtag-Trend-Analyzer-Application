@@ -5,6 +5,7 @@ import time
 
 
 # Define API endpoints
+# change api key 
 API_ENDPOINT_POST = 'https://kdoiogam58.execute-api.us-east-1.amazonaws.com/my_lambda'
 API_ENDPOINT_FETCH = 'https://3gsqstb2nd.execute-api.us-east-1.amazonaws.com/my_fetch_lambda'
 
