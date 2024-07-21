@@ -35,7 +35,7 @@ The Social Media Hashtag Trend Analyzer is a web application that analyzes trend
 ### Installation Steps
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/your-username/social-media-hashtag-trend-analyzer.git
+    git clone https://github.com/MananGupta2603/social-media-hashtag-trend-analyzer.git
     cd social-media-hashtag-trend-analyzer
     ```
 
@@ -47,10 +47,11 @@ The Social Media Hashtag Trend Analyzer is a web application that analyzes trend
 
 3. **Create DynamoDB Table**:
     - Create a table named `HashtagsTable` with `item_id` as the partition key (String).
+    - Create a `hashtag` and `text` as additional attributes (String).
 
 4. **Run Streamlit Application**:
     ```bash
-    streamlit run app.py
+    streamlit run hashtag.py
     ```
 
 ## Usage
