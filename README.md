@@ -19,10 +19,10 @@ The Social Media Hashtag Trend Analyzer is a web application that analyzes trend
 
 ## Project Structure
 ### social-media-hashtag-trend-analyzer
-- lambda_insert.py # AWS Lambda function code
-- lambda_fetch.py # AWS Lambda function code
-- hashtag.py # Streamlit application code
-- README.md # Project documentation
+- **lambda_insert.py** --> AWS Lambda function code
+- **lambda_fetch.py** --> AWS Lambda function code
+- **hashtag.py** --> Streamlit application code
+- **README.md** --> Project documentation
 
 ## Setup and Installation
 
