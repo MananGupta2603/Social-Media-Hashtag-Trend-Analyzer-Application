@@ -17,11 +17,14 @@ The Social Media Hashtag Trend Analyzer is a web application that analyzes trend
 - **DynamoDB**: NoSQL database to store hashtags and post content.
 - **Streamlit**: A Python library used to create the web interface for the application.
 
-## Architecture
-1. **User Input**: Users input their social media posts through the Streamlit web interface.
-2. **AWS Lambda**: The input is sent to an AWS Lambda function that extracts hashtags and stores them in DynamoDB.
-3. **DynamoDB**: Stores the extracted hashtags along with their associated post content.
-4. **Visualization**: Streamlit retrieves data from DynamoDB and visualizes the trending hashtags.
+## Project Structure
+social-media-hashtag-trend-analyzer/
+```
+   lambda_insert.py # AWS Lambda function code
+   lambda_fetch.py # AWS Lambda function code
+   hashtag.py # Streamlit application code
+   README.md # Project documentation
+```
 
 ## Setup and Installation
 
@@ -38,21 +41,16 @@ The Social Media Hashtag Trend Analyzer is a web application that analyzes trend
     cd social-media-hashtag-trend-analyzer
     ```
 
-2. **Install Dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. **Set Up AWS Lambda Function**:
+2. **Set Up AWS Lambda Function**:
     - Create a Lambda function in AWS Management Console.
     - Set the runtime to Python 3.8.
-    - Copy the contents of `lambda_function.py` from this repository to the Lambda function.
+    - Copy the contents of `lambda_insert.py` from this repository to the Lambda function.
     - Configure the Lambda function to have permissions to write to DynamoDB.
 
-4. **Create DynamoDB Table**:
+3. **Create DynamoDB Table**:
     - Create a table named `HashtagsTable` with `item_id` as the partition key (String).
 
-5. **Run Streamlit Application**:
+4. **Run Streamlit Application**:
     ```bash
     streamlit run app.py
     ```
@@ -63,11 +61,4 @@ The Social Media Hashtag Trend Analyzer is a web application that analyzes trend
 3. Submit the post to see the extracted hashtags stored in DynamoDB.
 4. View trending hashtags visualized on the web interface.
 
-## Project Structure
-social-media-hashtag-trend-analyzer/
-```
-   lambda_function.py # AWS Lambda function code
-   app.py # Streamlit application code
-requirements.txt # Python dependencies
- README.md # Project documentation
-```
+
