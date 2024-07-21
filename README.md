@@ -18,12 +18,11 @@ The Social Media Hashtag Trend Analyzer is a web application that analyzes trend
 - **Streamlit**: A Python library used to create the web interface for the application.
 
 ## Project Structure
-###social-media-hashtag-trend-analyzer
+### social-media-hashtag-trend-analyzer
 - lambda_insert.py # AWS Lambda function code
 - lambda_fetch.py # AWS Lambda function code
 - hashtag.py # Streamlit application code
 - README.md # Project documentation
-- 
 
 ## Setup and Installation
 
