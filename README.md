@@ -17,6 +17,8 @@ The Social Media Hashtag Trend Analyzer is a web application that analyzes trend
 - **DynamoDB**: NoSQL database to store hashtags and post content.
 - **Streamlit**: A Python library used to create the web interface for the application.
 
+## WorkFlow
+![](Workflow_social.jpg)
 ## Project Structure
 ### social-media-hashtag-trend-analyzer
 - **lambda_insert.py** --> AWS Lambda function code
